@@ -1,0 +1,26 @@
+[
+    {
+        "image":"https://img.freepik.com/free-photo/hot-green-tea-glass-teapot-cup_144627-13617.jpg?w=740&t=st=1688117554~exp=1688118154~hmac=13f1de8c0cc9b3722d53e43afc6c9f5c76d2553dc691577fd84e21555bd3cf7e",
+        "category": "Organic tea"
+    },
+    {
+        "image":"https://img.freepik.com/free-photo/iced-cola-glass_74190-4610.jpg?w=740&t=st=1688118025~exp=1688118625~hmac=28b5b7ce34a76b6338de01e338e6793418ed7d4e97b8a2ae388f82f999aad554",
+        "category": "Iced Teas"
+    },
+    {
+        "image":"https://img.freepik.com/free-vector/black-tea-packaging-realistic-design_1284-25629.jpg?w=740&t=st=1688117982~exp=1688118582~hmac=c89f8ce37aef8d51cbee6c11fbe5521a9c32aee6afd2d45d61d429912e28363c",
+        "category": "Tea Bags"
+    },
+    {
+        "image":"https://img.freepik.com/free-photo/glass-tea-with-budding-roses-placed-blue-table_2831-8254.jpg?w=740&t=st=1688117917~exp=1688118517~hmac=fbdaa41ad4c7eff5ca173fc5efc54c414bddffeee151e497f7a2e310429ad63b",
+        "category": "Classic Teas"
+    },
+    {
+        "image":"https://img.freepik.com/free-photo/tea-with-mint-dried-herbs-lemon-sweeties-cup-dark-blue-surface-high-angle-view_176474-6743.jpg?t=st=1688117826~exp=1688118426~hmac=2d3dadacccadcb02b460a4382a0b71a6475e578d74d8d6410b3abef0b31f941f",
+        "category": "Loose Leaf"
+    },
+    {
+        "image":"https://img.freepik.com/free-photo/chrysanthemum-flower-tea-table_1150-28271.jpg?w=740&t=st=1688117786~exp=1688118386~hmac=25d5fa9e10dc32fa9db983443fd862d2fe1e1b8bba7067285955f19c5f3ed0fb",
+        "category": "Vegan Teas"
+    }
+]

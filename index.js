@@ -1,6 +1,9 @@
+'use strict'
+
 const express = require('express')
 const cors = require('cors')
 const jwt = require('jsonwebtoken');
+const stripe = require('stripe')(process.env.VITE_PRAMENT_KEY)
 require("dotenv").config();
 const app = express()
 const port = process.env.PORT || 5000
@@ -128,6 +131,13 @@ async function run() {
             const result = { admin: user?.role === 'admin' }
             res.send(result)
         })
+        //product api
+        app.post('/products', async (req, res) => {
+            const product = req.body;
+            const result = await productCollection.insertOne(product);
+            res.send(result);
+        })
+
 
         app.get('/products', async (req, res) => {
             const cursor = productCollection.find()
@@ -182,6 +192,23 @@ async function run() {
             res.send(result)
         })
 
+
+        // payment api 
+
+        app.post('/create-payment-intent', async (req, res) => {
+            const { price } = req.body;
+            const amount = price * 100;
+            console.log(price, amount)
+            const paymentIntetnt = await stripe.paymentIntetnts.create({
+                amount: amount,
+                currency: 'usd',
+                payment_method_types: ['card']
+
+            });
+            res.send({
+                clientSecret: paymentIntetnt.client_secret,
+            })
+        })
 
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
